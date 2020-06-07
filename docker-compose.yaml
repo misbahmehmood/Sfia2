@@ -1,0 +1,34 @@
+version: '3.7'
+services:
+  service_1:
+    build: 
+      image: service_1
+      build: ./Service_1
+    ports:
+    - target: 5000
+      published: 5000
+      protocol: tcp
+  service_2:
+    build: 
+      image: service_2
+      build: ./Service_2
+    ports:
+    - target: 5001
+      published: 5001
+      protocol: tcp
+  service_3:
+    build: 
+      image: service_3
+      build: ./Service_3
+    ports:
+    - target: 5002
+      published: 5002
+      protocol: tcp
+  service_4:
+    build: 
+      image: service_4
+      build: ./Service_4
+    ports:
+    - target: 5003
+      published: 5003
+      protocol: tcp
