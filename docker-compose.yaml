@@ -14,7 +14,7 @@ services:
     image: service_2
     build: ./Service_2
     ports:
-      - target: 5000
+      - target: 5001
         published: 5001
         protocol: tcp
 
@@ -22,13 +22,16 @@ services:
     image: service_3
     build: ./Service_3
     ports:
-      - target: 5000
+      - target: 5002
         published: 5002
         protocol: tcp
   service_4:
     image: service_4
     build: ./Service_4
     ports:
-      - target: 5000
+      - target: 5003
         published: 5003
         protocol: tcp
+    environment:
+      PROJECT_URI: ${PROJECT_URI}
+      SECRET_KEY: ${SECRET_KEY}

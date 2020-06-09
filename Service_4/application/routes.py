@@ -1,17 +1,18 @@
 from flask import render_template, request, redirect, Response
 import requests
-from application import app
+from application import app, db
+from random import randint
+from application.models import Disney, Marvel
 
-@app.route('/full', methods=['GET'])
+@app.route('/full', methods=['GET', 'POST'])
 def disney_full():
-    beginning = requests.get('http://service2:5001/disney')
-    end = requests.get('http://service3:5002/animals')
+    beginning = requests.get('http://service_2:5001/disney')
+    end = requests.get('http://service_3:5002/animals')
     response = beginning.text + ' ' + end.text
-    return response
+    
 
-@app.route('/marvel/full', methods=['GET'])
-def marvel_full():
-    beginning = requests.get('http://service2:5001/marvel')
-    end = requests.get('http://service3:5002/mythical')
-    response = beginning.text + ' ' + end.text
+    disneycharacter= Disney(name= response)
+    db.session.add(disneycharacter)
+    db.session.commit()
+
     return response

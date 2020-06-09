@@ -6,24 +6,14 @@
 		</title>
     </head>
 	<body>
-		<h1>Disney Character</h1>
-		<p>{{ name }}</p>
+		<h1>Alternative Disney Character</h1>
+		<p>{{ result }}</p>
 		<button onclick="window.location.reload();">
 			Generate
 		</button>
 		{% for character in disneycharacter %}
-        <h4>{{ character.name }}</h4>
+        	<h4>{{ character.name }}</h4>
 		{% endfor %}
         
-		
-		<h1>Marvel Character</h1>
-		<p>{{ name }}</p>
-		<button onclick="window.location.reload();">
-			Generate 
-		</button>
-		{% for character in marvelcharacter %}
-        <h4>{{ character.name }}</h4>
-		{% endfor %}
-	
 	</body>
 </html>
