@@ -1,10 +1,29 @@
 <!DOCTYPE html>
 <html>
 	<head>			
-	<title>{{ title }}</title>
+		<title>
+			{{ title}}
+		</title>
     </head>
-    <h1>Alternative Character Catchphrases</h1>
 	<body>
-        {{ characterphrase }}
+		<h1>Disney Character</h1>
+		<p>{{ name }}</p>
+		<button onclick="window.location.reload();">
+			Generate
+		</button>
+		{% for character in disneycharacter %}
+        <h4>{{ character.name }}</h4>
+		{% endfor %}
+        
+		
+		<h1>Marvel Character</h1>
+		<p>{{ name }}</p>
+		<button onclick="window.location.reload();">
+			Generate 
+		</button>
+		{% for character in marvelcharacter %}
+        <h4>{{ character.name }}</h4>
+		{% endfor %}
+	
 	</body>
 </html>

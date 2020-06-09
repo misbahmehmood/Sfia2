@@ -1,13 +1,17 @@
-@app.route('/disney_characterphrase', methods=['GET'])
-def disney_characterphrase():
-    name = requests.get('http://service2:5001/disney_characters')
-    catchphrase = requests.get('http://service3:5002/marvel_catchphrase')
-    response = 'Your random Character: ' + character.text + 'Random Alternative Catchphrase: ' + catchphrase.text
+from flask import render_template, request, redirect, Response
+import requests
+from application import app
+
+@app.route('/full', methods=['GET'])
+def disney_full():
+    beginning = requests.get('http://service2:5001/disney')
+    end = requests.get('http://service3:5002/animals')
+    response = beginning.text + ' ' + end.text
     return response
 
-@app.route('/marvel_characterphrase', methods=['GET'])
-def marvel_characterphrase():
-    name = requests.get('http://service2:5001/marvel_characters')
-    catchphrase = requests.get('http://service3:5002/disney_catchphrase')
-    response = 'Your random Character: ' + character.text + 'Random Alternative Catchphrase: ' + catchphrase.text
+@app.route('/marvel/full', methods=['GET'])
+def marvel_full():
+    beginning = requests.get('http://service2:5001/marvel')
+    end = requests.get('http://service3:5002/mythical')
+    response = beginning.text + ' ' + end.text
     return response
