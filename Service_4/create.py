@@ -1,5 +1,5 @@
 from application import db
-from application.models import Disney, Marvel
+from application.models import Cartoon
 
 db.drop_all()
 db.create_all()

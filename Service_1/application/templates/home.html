@@ -6,14 +6,23 @@
 		</title>
     </head>
 	<body>
-		<h1>Alternative Disney Character</h1>
+		<h1>Cartoon Character Profile</h1>
 		<p>{{ result }}</p>
 		<button onclick="window.location.reload();">
 			Generate
 		</button>
-		{% for character in disneycharacter %}
-        	<h4>{{ character.name }}</h4>
+		<p>
+		{% for character in cartooncharacter %}
+		<hr>
+			<h4>{{ character.name }}</h4>
+			<small>{{ character.information }}</small>
+			<small>{{ character.type }}</small>
+		
+			<br>
+			<br>
 		{% endfor %}
+	</p>
+	
         
 	</body>
 </html>
