@@ -3,14 +3,14 @@ pipeline {
 
     stages{
 
-            stage('Dependencies'){
+            stage('Make script executable'){
                 steps{
                     sh 'chmod +x ./script/*'
                     
                 }
             }
 
-            stage('Deploying Docker'){
+            stage('Deploying docker swarm'){
                 steps{
                     sh './script/docker.sh'
                 }
