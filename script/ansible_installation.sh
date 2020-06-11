@@ -1,15 +1,15 @@
 #!/bin/bash
 
-apt install -y python 
-apt install -y python-pip
+sudo apt install -y python 
+sudo apt install -y python-pip
 
-mkdir -p ~/.local/bin
-touch ~/.bashrc
+sudo mkdir -p ~/.local/bin
+sudo touch ~/.bashrc
 echo 'PATH=$PATH:~/.local/bin' > ~/.bashrc
 
 sudo chown -R $(whoami):$(whoami) ~/*
 source ~/.bashrc
 
-pip install --user ansible
+pip3 install --user ansible
 
 ansible --version
