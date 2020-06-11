@@ -16,6 +16,7 @@ pipeline {
                     sh './script/ansible.sh'
                     
                 }
+            }
 
             stage('Deploying docker swarm'){
                 steps{
