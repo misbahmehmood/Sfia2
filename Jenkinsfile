@@ -10,9 +10,9 @@ pipeline {
                 }
             }
 
-            stage('Use ansible'){
+            stage('Use and install ansible'){
                 steps{
-
+                    sh '.script/ansible_installation.sh'
                     sh './script/ansible.sh'
                     
                 }
