@@ -10,6 +10,13 @@ pipeline {
                 }
             }
 
+            stage('Use ansible'){
+                steps{
+
+                    sh './script/ansible.sh'
+                    
+                }
+
             stage('Deploying docker swarm'){
                 steps{
                     sh './script/docker.sh'
