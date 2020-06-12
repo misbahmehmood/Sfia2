@@ -16,7 +16,8 @@
 # Introduction
 
 
-My application randomly generated a cartoon character and displayed either their catchphrase, species or the TV show they are from.
+
+For my application, I decided to create a randomly generated cartoon character and displayed either their catchphrase, species or the TV show they are a part of.
 
 # The Brief
 
