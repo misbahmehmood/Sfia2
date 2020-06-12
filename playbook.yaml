@@ -1,26 +1,17 @@
-- name: install docker on manager 
+- name: Manager node- install docker and initiate swarm 
   hosts: swarmmanager
   connection: local
   become: true
   roles:
     - installation
-    
-- name: initiate swarm on manager 
-  hosts: swarmmanager
-  connection: local
-  become: true
-  roles:
     - initiate_swarm
+    
 
-- name: install docker on worker 
+- name: Worker node- install docker, add as woker
   hosts: swarmworker
   become: true
   roles:
     - installation
-  
-- name: add workers to the swarm
-  hosts: swarmworker
-  become: true
-  roles:
     - add_workers
+  
 
