@@ -2,6 +2,6 @@
 
 source ~/.bashrc
 
-docker stack deploy -c docker-compose.yaml fullapp
+env PROJECT_URI="${PROJECT_URI}" docker stack deploy -c docker-compose.yaml fullapp
 
 echo $PROJECT_URI
