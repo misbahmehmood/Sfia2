@@ -9,6 +9,9 @@ services:
         protocol: tcp
     environment:
       - PROJECT_URI=${PROJECT_URI}
+    deploy:
+      replicas: 2
+
   service_2:
     image: misbahmehmood/service_2
     build: ./Service_2
@@ -16,6 +19,8 @@ services:
       - target: 5001
         published: 5001
         protocol: tcp
+    deploy:
+      replicas: 2
 
   service_3:
     image: misbahmehmood/service_3
@@ -24,6 +29,9 @@ services:
       - target: 5002
         published: 5002
         protocol: tcp
+    deploy:
+      replicas: 2
+
   service_4:
     image: misbahmehmood/service_4
     build: ./Service_4
@@ -33,3 +41,5 @@ services:
         protocol: tcp
     environment:
       - PROJECT_URI=${PROJECT_URI}
+    deploy:
+      replicas: 2

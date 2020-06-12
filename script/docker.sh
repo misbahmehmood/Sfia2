@@ -2,6 +2,10 @@
 
 source ~/.bashrc
 
-env PROJECT_URI="${PROJECT_URI}" docker stack deploy -c docker-compose.yaml fullapp
+docker-compose build
+docker push misbahmehmood/service_1
+docker push misbahmehmood/service_2
+docker push misbahmehmood/service_3
+docker push misbahmehmood/service_4
 
-echo $PROJECT_URI
+env PROJECT_URI="${PROJECT_URI}" docker stack deploy -c docker-compose.yaml fullapp
