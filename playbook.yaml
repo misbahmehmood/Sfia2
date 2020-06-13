@@ -7,7 +7,7 @@
     - initiate_swarm
     
 
-- name: Worker node- install docker, add as worker
+- name: Worker nodes- install docker, add as workers
   hosts: swarmworker
   become: true
   roles:
