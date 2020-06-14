@@ -79,7 +79,7 @@ I also made use of the issues option to record any issues faced during the appli
 Overall I used 5 branches including an app branch when I decided to update the application and add more options to randomly generate.
 
 # Improvements and issues
-* Testing- Try and include more integrated testing and Mock testing to gain more coverage and test all the different services.
+* Testing- Try and include more integrated testing and Mock testing to gain more coverage and fully test all of the services. 
 * Scale out more effectively- As stated in my risk assessment, I came across an issue with one of my virtual machines being overused. Given more time, I would use the cloud benefit of scaling out and adding another worker node and resolve the error I had with Jenkins not being able to access the machine through SSH. 
 * Improve front end design- At the moment, when generating the final object, there are no headings to show what was generated. I would add a table or make it more clear with titles for each generated section of a post.
 
