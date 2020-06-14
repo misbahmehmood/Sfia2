@@ -1,19 +1,11 @@
 version: '3.7'
 services:
   nginx:
-    image: misbahmehmood/nginx
-    build: ./nginx 
+    image: nginx:latest 
     ports:
     - target: 80
       published: 80
       protocol: tcp
-    depends_on:
-        - service_1
-        - service_2
-        - service_3
-        - service_4
-    deploy:
-        replicas: 2
     volumes:
     - type: bind
       source: ./nginx/reverseproxy.conf
