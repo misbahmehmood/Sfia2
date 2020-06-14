@@ -12,6 +12,6 @@ class Cartoon(db.Model):
         return ''.join([
             'Name: ', self.name, '\r\n',
             'Information: ', self.information, '\r\n'
-            'Type: ', self.type
+            'Type: ', self.profiletype
             ])
 

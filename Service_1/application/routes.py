@@ -10,3 +10,4 @@ def home():
     result= response.text
     print(result)
     return render_template('home.html', cartooncharacter=cartoonData, result=result, title='Home')
+
