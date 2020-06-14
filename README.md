@@ -36,13 +36,17 @@ Below are the initial tables I planned out for the application using the MOSCOW 
 ## Final table
 ![](https://raw.githubusercontent.com/misbahmehmood/Sfia2/development/images/Final%20table.jpg)
 
-When the application was built and I understood how the database would incorprate within the microservices, I decided it was easier to merge the initial tables together in a single table. Instead of seperating the characters into Disney and Marvel, I included all cartoon characters. 
+When the application was built and I understood how the database would incorporate within the microservices, I decided it was easier to merge the initial tables together in a single table. Instead of seperating the characters into Disney and Marvel, I included all cartoon characters. 
 
-The name column would include their names, the profile type would be either their catchphrases, tv shows or species. Finally, the information column would include list their catchphrase, tv show or species depending on which profile type was generated in the third microservice. 
+The name column would include their names, the profile type would be either their catchphrases, tv shows or species. Finally, the information column would list their catchphrase, tv show or species depending on which profile type was generated in the third microservice. 
 
 # Risk Assessment
+![](https://raw.githubusercontent.com/misbahmehmood/fundamental_project/images/images/Risk%20Assessment%20key.jpg)
+![](https://raw.githubusercontent.com/misbahmehmood/Sfia2/development/images/Risk%20Assessment.png)
+(Please click on the images to show a clearer view)
 
 # Deployment
 ![](https://raw.githubusercontent.com/misbahmehmood/Sfia2/development/images/CI%20Pipeline%20(1).jpg)
+
 
 # Improvements
