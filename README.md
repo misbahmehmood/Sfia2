@@ -11,6 +11,7 @@
 * [Risk Assessment](#Risk-Assessment)
 * [Testing](#Testing)
 * [Deployment](#Deployment)
+    * [Version Control System](#Version-Control-System)
 * [Improvements for the future](#Improvements)
 
 # Introduction
@@ -25,10 +26,17 @@ For my application, I decided to create a randomly generated cartoon character a
 ## Scope
 
 # Project Tracking
-# Tables
-## Initial tables
-A database was required in this project which could persist data. Instead of creating a mysql service through Docker and persisting it with the use of volumes, I created a database on the cloud due to being familiar with using databases on the cloud from previous projects and the scalability benefits the cloud provides. 
+A trello board was used for project management and tracking. Having already used trello for practise exercises during training, it was easy to use and simple to follow. The user stories were planned out first implementing the MoSCoW principle to keep the focus on the essential areas. Scrum framework was used with the sprint backlog, this was then explored further by adding specific tasks and sprints relating to the backlog.
+## Initial Tracking Board
+The MoSCoW prioritisation method is displayed through the use of labels. Everything on the board is a Must Have unless specifically mentioned otherwise. 
+![](https://raw.githubusercontent.com/misbahmehmood/Sfia2/development/images/Initial%20Trello%20board.png)
 
+## Final Tracking Board 
+![](https://raw.githubusercontent.com/misbahmehmood/Sfia2/development/images/Final%20Trello%20Board.png)
+
+# Tables
+A database was required in this project which could persist data. Instead of creating a mysql service through Docker and persisting it with the use of volumes, I created a database on the cloud due to being familiar with using databases on the cloud from previous projects and the scalability benefits the cloud provides. 
+## Initial tables
 Below are the initial tables I planned out for the application using the MOSCOW principle to help me with keeping focus on what is important to include:
 
 ![](https://raw.githubusercontent.com/misbahmehmood/Sfia2/development/images/Initial%20tables-Page-1.jpg)
@@ -48,5 +56,11 @@ The name column would include their names, the profile type would be either thei
 # Deployment
 ![](https://raw.githubusercontent.com/misbahmehmood/Sfia2/development/images/CI%20Pipeline%20(1).jpg)
 
+## Version Control System
+Most of my work was completed on the development branch. I added a docker branch when completing all the docker tasks and merged with the development branch once I was sure docker deployment was fully working. As I went on through the project, I continued adding branches and merged with development once I had working code after completing individual tasks/sprints in the trello board. 
+
+I also made use of the issues option to record any issues faced during the application.
+
+Overall I used 5 branches including an app branch when I decided to update the application and add more options to randomly generate.
 
 # Improvements
