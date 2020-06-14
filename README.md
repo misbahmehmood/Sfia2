@@ -67,7 +67,7 @@ Unit testing with pytest was used to test the application was working as expecte
 ## Service 4
 ![](https://raw.githubusercontent.com/misbahmehmood/Sfia2/development/images/service4.jpg)
 
-Services 2 and 3 gained 100% coverge report whereas Service 3 and 4 which both included databases needed were at a lower percentage. Due to the nature of Microservices, a different type of testing was needed in order to increase percentage. Service 4 in my application included a lot of information about databases which is the reason for the significantly lower coverage percentage.
+Services 2 and 3 gained 100% coverge report whereas Service 1 and 4 which both included databases needed were at a lower percentage. Due to the nature of Microservices, a different type of testing was needed in order to increase percentage. Service 4 in my application included a lot of information about databases which is the reason for the significantly lower coverage percentage.
 # Deployment
 ![](https://raw.githubusercontent.com/misbahmehmood/Sfia2/development/images/CI%20Pipeline%20(1).jpg)
 
@@ -83,4 +83,9 @@ Overall I used 5 branches including an app branch when I decided to update the a
 * Scale out more effectively- As stated in my risk assessment, I came across an issue with one of my virtual machines being overused. Given more time, I would use the cloud benefit of scaling out and adding another worker node and resolve the error I had with Jenkins not being able to access the machine through SSH. 
 * Improve front end design- At the moment, when generating the final object, there are no headings to show what was generated. I would add a table or make it more clear with titles for each generated section of a post.
 
+# Author
+Misbah Mehmood - QA Academy Trainee
+
+# Acknowledgements
+* QA Trainers who always tried their best to help me with any issues
 
