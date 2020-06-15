@@ -13,9 +13,10 @@
 		</button>
 		<p>
 		{% for character in cartooncharacter %}
+		<hr>
 			<h4>{{ character.name }}</h4>
+			<small>{{ character.profiletype }}</small><br>
 			<small>{{ character.information }}</small>
-			<small>{{ character.profiletype }}</small>
 		
 			<br>
 			<br>
