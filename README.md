@@ -15,15 +15,36 @@
 * [Improvements for the future](#Improvements)
 
 # Introduction
-
-
+A solo project building an application using microservices and different DevOps tools used during QA Academy training, due to present at the beginning of week 9.
 
 For my application, I decided to create a randomly generated cartoon character and displayed either their catchphrase, species or the TV show they are a part of.
 
 # The Brief
+The brief required creating a service-orientated architecture for the application which contains 4 microservices working together. 
 
+The application must have 2 implementations that can be demonstrated during the rolling update, showing that users can still have access to the webpage whilst the update is occuring without any downtime. The second implementation change has to be clearly visible once the update is completed.
 
 ## Scope
+* A list of requirements to meet the MVP were given for the project:
+An Trello board with full expansion on tasks needed to complete the project.
+This could also provide a record of any issues or risks that you faced creating your project.
+* An Application fully integrated using the Feature-Branch model into a Version Control System which will subsequently be built through a CI server and deployed to a cloud-based virtual machine.
+* If a change is made to a code base, then Web hooks should be used so that Jenkins recreates and redeploys the changed application
+* The project must follow the Service-oriented architecture that has been asked for.
+* The project must be deployed using containerisation and an orchestration tool.
+* As part of the project you need to create an Ansible Playbook that will provision the environment that your application needs to run.
+
+# Technology Used
+* Kanban Board: Asana or an equivalent Kanban Board
+* Database- GCP SQL Server
+* Version Control: Git
+* CI Server: Jenkins
+* Configuration Management: Ansible
+* Cloud server: GCP virtual machines
+* Containerisation: Docker
+* Orchestration Tool: Docker Swarm
+* Front-end - Flask (HTML and Jinja2)
+* Unit Testing with Python- Pytest
 
 # Project Tracking
 A trello board was used for project management and tracking. Having already used trello for practise exercises during training, it was easy to use and simple to follow. The user stories were planned out first implementing the MoSCoW principle to keep the focus on the essential areas. Scrum framework was used with the sprint backlog, this was then explored further by adding specific tasks and sprints relating to the backlog.
