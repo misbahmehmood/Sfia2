@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>			
+		<title>
+			{{ title}}
+		</title>
+    </head>
+	<body>
+		<h1>Cartoon Character Profile</h1>
+		<p>{{ result }}</p>
+		<button onclick="window.location.reload();">
+			Generate
+		</button>
+		<p>
+		{% for character in cartooncharacter %}
+		<hr>
+			<h4>{{ character.name }}</h4>
+			<small>{{ character.profiletype }}</small><br>
+			<small>{{ character.information }}</small>
+		
+			<br>
+			<br>
+		{% endfor %}
+	</p>
+	
+        
+	</body>
+</html>
